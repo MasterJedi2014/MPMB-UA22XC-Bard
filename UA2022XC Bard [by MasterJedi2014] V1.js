@@ -27,7 +27,7 @@ SourceList["UA22XC"] = {
 	Some of the code references spells that appear in later UA articles. These spells will be added to the sheet
 	by the scripts for those UA articles.
 */
- // Ripped directly from "all_WotC_pub+UA.js"" and then altered
+
 // Add UA22XC Bard class
 ClassList.bard_ua22xc = {
 	name : "Bard (UA:XC)",
@@ -273,7 +273,7 @@ ClassList.bard_ua22xc = {
 	},
 };
 
-//// Add Bard optional choices; Ripped directly from all_WotC_pub+UA.js and then altered
+//// Add Bard optional choices; Ripped directly from "all_WotC_pub+UA.js" and then altered
 AddFeatureChoice(ClassList.bard_ua22xc.features["spellcasting ua22xc"], true, "Access to Dunamancy Spells", {
 	name : "Dunamancy Spells",
 	extraname : "Optional Bard 1",
@@ -319,7 +319,7 @@ AddFeatureChoice(ClassList.bard_ua22xc.features["songs of restoration 2 ua22xc"]
 	prereqeval : function (v) { return classes.known.bard_ua22xc.level >= 4 ? true : "skip"; }
 }, "Optional 4th-level bard features");
 
-//// Add "UA 2019: Class Feature Variants" Bard optional choices; Ripped directly from all_WotC_pub+UA.js and then altered
+//// Add "UA 2019: Class Feature Variants" Bard optional choices; Ripped directly from "all_WotC_pub+UA.js" and then altered
 AddFeatureChoice(ClassList.bard_ua22xc.features["spellcasting ua22xc"], true, "Spell Versatility (ua)", {
 	name : "Spell Versatility",
 	extraname : "Optional Bard 1",
