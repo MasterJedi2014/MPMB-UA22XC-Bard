@@ -110,6 +110,17 @@ ClassList.bard_ua22xc = {
 			additional : levels.map(function (n, idx) {
 				return [3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5][idx] + " cantrips known";
 			}),
+			calcChanges : {
+				spellList : [
+					function(spList, spName, spType) {
+						// Stop this is not the class' spell list or if this is for a bonus spell entry
+						if (spName !== "bard" && spType.indexOf("bonus") !== -1) return;
+						spList.extraspells = spList.extraspells.concat(["mass healing word"]);
+					},
+					"Adds the \"Mass Healing Word\" spell to the bard class' spell list.",
+					101,
+				]
+			},
 		},
 		"expertise ua22xc" : function() { //Ripped directly from "ListClasses.js" and then altered
 			var a = {
@@ -302,9 +313,9 @@ AddFeatureChoice(ClassList.bard_ua22xc.features["spellcasting ua22xc"], true, "A
 			function(spList, spName, spType) {
 				// Stop this is not the class' spell list or if this is for a bonus spell entry
 				if (spName !== "bard" || spType.indexOf("bonus") !== -1) return;
-				spList.extraspells = spList.extraspells.concat(["color spray", "command", "aid", "enlarge/reduce", "mirror image", "mass healing word", "slow", "phantasmal killer", "rary's telepathic bond", "heroes' feast", "prismatic spray", "antipathy/sympathy", "prismatic wall"]);
+				spList.extraspells = spList.extraspells.concat(["color spray", "command", "aid", "enlarge/reduce", "mirror image", "slow", "phantasmal killer", "rary's telepathic bond", "heroes' feast", "prismatic spray", "antipathy/sympathy", "prismatic wall"]);
 			},
-			"This optional class feature expands the spell list of the bard class with the following spells (spell level in brackets): Color Spray (1), Command (1), Aid (2), Enlarge/Reduce (2), Mirror Image (2), Mass Healing Word (3), Slow (3), Phantasmal Killer (4), Rary's Telepathic Bond (5), Heroes' Feast (6), Prismatic Spray (7), Antipathy/Sympathy (8), and Prismatic Wall (9)."
+			"This optional class feature expands the spell list of the bard class with the following spells (spell level in brackets): Color Spray (1), Command (1), Aid (2), Enlarge/Reduce (2), Mirror Image (2), Slow (3), Phantasmal Killer (4), Rary's Telepathic Bond (5), Heroes' Feast (6), Prismatic Spray (7), Antipathy/Sympathy (8), and Prismatic Wall (9)."
 		]
 	}
 }, "Optional 1st-level bard features");
