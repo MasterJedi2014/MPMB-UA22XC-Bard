@@ -10,6 +10,10 @@ A lot of the content of this script is either ripped directly from existing code
 
 This script will allow users to more easily playtest the upcoming revision to D&D 5E.
 
+**Script Patch Notes:**
+- **2024-03-20:**
+  - Added support for the *UA22CS* spells.
+
 **Script Content Source:** https://media.dndbeyond.com/compendium-images/one-dnd/expert-classes/kpx0MvyfBGHe0XKk/UA2022-Expert-Classes.pdf
 
 For instructions on how to add this script to the sheet, please see this page: https://www.flapkan.com/how-to/add-more-content
