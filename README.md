@@ -13,6 +13,7 @@ This script will allow users to more easily playtest the upcoming revision to D&
 **Script Patch Notes:**
 - **2024-03-20:**
   - Added support for the *UA22CS* spells.
+  - Added URL attribute to the source section within the script.
 
 **Script Content Source:** https://media.dndbeyond.com/compendium-images/one-dnd/expert-classes/kpx0MvyfBGHe0XKk/UA2022-Expert-Classes.pdf
 
