@@ -19,6 +19,7 @@ SourceList["UA22XC"] = {
 	name : "Unearthed Arcana 2022: Expert Classes",
 	abbreviation : "UA22XC",
 	date : "2022/09/29",
+	url : "https://media.dndbeyond.com/compendium-images/one-dnd/expert-classes/kpx0MvyfBGHe0XKk/UA2022-Expert-Classes.pdf",
 };
 
 /* 	This Bard is the version that appeared in the UA22XC article. Due to the removal of the Arcane, Divine, &
